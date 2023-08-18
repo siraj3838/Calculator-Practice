@@ -6,7 +6,8 @@ function clickBtnTriangle(){
         return;
     }
     const area = 0.5 * base * height;
-    setElement('triangle-output', area);
+    const areaTwoPoint = area.toFixed(2)
+    setElement('triangle-output', areaTwoPoint);
 }
 
 function clickBtnRectangle(){
@@ -17,7 +18,8 @@ function clickBtnRectangle(){
         return;
     }
     const area = weight * height;
-    setElement('rectangle-output', area)
+    const areaTwoPoint = area.toFixed(2)
+    setElement('rectangle-output', areaTwoPoint)
 }
 
 function clickBtnParallelogram(){
@@ -28,7 +30,8 @@ function clickBtnParallelogram(){
         return;
     }
     const area = base * height;
-    setElement('parallelogram-output', area);
+    const areaTwoPoint = area.toFixed(2)
+    setElement('parallelogram-output', areaTwoPoint);
 }
 
 function clickBtnRhombus(){
@@ -39,7 +42,8 @@ function clickBtnRhombus(){
         return;
     }
     const area = 0.5 * d1 * d2;
-    setElement('rhombus-output', area);
+    const areaTwoPoint = area.toFixed(2)
+    setElement('rhombus-output', areaTwoPoint);
 }
 
 function clickBtnPentagon(){
@@ -49,8 +53,11 @@ function clickBtnPentagon(){
         alert('Please Insert a Number');
         return;
     }
-    const area = 0.5 * pentagonP * pentagonB;
-    setElement('pentagon-output', area);
+    const numerator = 5 * Math.pow(10, 2);
+    const denominator = 4 * Math.tan(Math.PI / 5);
+    const area = numerator / denominator;
+    const areaTwoPoint = area.toFixed(2)
+    setElement('pentagon-output', areaTwoPoint);
 }
 
 function clickBtnEllipse(){
@@ -61,7 +68,8 @@ function clickBtnEllipse(){
         return;
     }
     const area = 3.14 * a * b;
-    setElement('ellipse-output', area);
+    const areaTwoPoint = area.toFixed(2)
+    setElement('ellipse-output', areaTwoPoint);
 }
 
 
